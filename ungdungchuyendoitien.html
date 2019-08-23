@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="AMOUNT">
+<h3>Amount</h3>
+<input type="text" value="" id="Amount">
+</div>
+<div id = "Frm Currency">
+<h3>From Currency</h3>
+<select id="so1">
+    <option value="01">VietNam</option>
+    <option value="02">USD</option>
+</select>
+</div>
+<div id="currency">
+<h3>To Currency</h3>
+<select id="so2">
+    <option value="02">USD</option>
+    <option value="01">VietNam</option>
+</select>
+</div>
+<p><input type="button" value="Convert" onclick="chuyendoi();"></p>
+<p id="result"></p>
+<script>
+    function chuyendoi()
+    {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let Amount = document.getElementById("Amount").value;
+        if (so1 === "01" && so2 === "02")
+        {
+            document.getElementById("result").innerHTML = "Result: " + Amount / 23000 + "VND";
+        }
+        else if (so1 === "02" && so2 === "01")
+        {
+            document.getElementById("result").innerHTML = "Result: " + Amount * 23000 + "USD";
+        }
+    }
+    //chuyendoi()
+</script>
+</body>
+</html>
