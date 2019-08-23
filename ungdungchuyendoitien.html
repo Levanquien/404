@@ -5,19 +5,18 @@
     <title></title>
 </head>
 <body>
-<div id="AMOUNT">
-<h3>Amount</h3>
+<form>
+Amount<br>
 <input type="text" value="" id="Amount">
-</div>
-<div id = "Frm Currency">
-<h3>From Currency</h3>
+</form>
+<br><br>
+From Currency<br>
 <select id="so1">
     <option value="01">VietNam</option>
     <option value="02">USD</option>
 </select>
-</div>
-<div id="currency">
-<h3>To Currency</h3>
+<br><br>
+To Currency<br/>
 <select id="so2">
     <option value="02">USD</option>
     <option value="01">VietNam</option>
@@ -25,6 +24,7 @@
 </div>
 <p><input type="button" value="Convert" onclick="chuyendoi();"></p>
 <p id="result"></p>
+</body>
 <script>
     function chuyendoi()
     {
